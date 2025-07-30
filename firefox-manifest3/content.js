@@ -29,7 +29,10 @@ function logEvent(type, event) {
         targetX: event.clientX-target.clientRect.left,
         targetY: event.clientY-target.clientRect.top
       },
-      target
+      target,
+      location: {
+        href: location.href
+      }
     })
   });
 }
